@@ -22,7 +22,7 @@
 							icon="icon-close"
 							@click="cancelNewNote(note)">
 							{{
-							t('mediaconverter', 'Cancel note creation') }}
+								t('mediaconverter', 'Cancel note creation') }}
 						</ActionButton>
 						<ActionButton v-else
 							icon="icon-delete"
@@ -50,14 +50,15 @@
 			<div v-else id="emptycontent">
 				<div class="icon-file" />
 				<h2>{{
-				 t('mediaconverter', 'Create a note to get started') }}</h2>
+					t('mediaconverter', 'Create a note to get started') }}
+				</h2>
 			</div>
 		</AppContent>
 	</div>
 </template>
 
 <script>
-import ActionButton from '@nextcloud/vue/dist/Components/ActionButton'
+import ActionButton from "@nextcloud/vue/dist/Components/ActionButton.js"
 import AppContent from '@nextcloud/vue/dist/Components/AppContent'
 import AppNavigation from '@nextcloud/vue/dist/Components/AppNavigation'
 import AppNavigationItem from '@nextcloud/vue/dist/Components/AppNavigationItem'
