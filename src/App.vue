@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import ActionButton from "@nextcloud/vue/dist/Components/ActionButton.js"
+import ActionButton from '@nextcloud/vue/dist/Components/ActionButton.js'
 import AppContent from '@nextcloud/vue/dist/Components/AppContent'
 import AppNavigation from '@nextcloud/vue/dist/Components/AppNavigation'
 import AppNavigationItem from '@nextcloud/vue/dist/Components/AppNavigationItem'
