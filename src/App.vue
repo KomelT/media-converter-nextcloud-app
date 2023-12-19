@@ -49,9 +49,8 @@
 			</div>
 			<div v-else id="emptycontent">
 				<div class="icon-file" />
-				<h2>{{
-					t('mediaconverter', 'Create a note to get started') }}
-				</h2>
+				<h2>{{ t('mediaconverter', 'Create a note to get started') }}</h2>
+
 			</div>
 		</AppContent>
 	</div>
@@ -89,7 +88,7 @@ export default {
 	computed: {
 		/**
 		 * Return the currently selected note object
-		 * @returns {Object|null}
+		 * @return {object|null}
 		 */
 		currentNote() {
 			if (this.currentNoteId === null) {
@@ -100,7 +99,7 @@ export default {
 
 		/**
 		 * Returns true if a note is selected and its title is not empty
-		 * @returns {Boolean}
+		 * @return {boolean}
 		 */
 		savePossible() {
 			return this.currentNote && this.currentNote.title !== ''
@@ -123,7 +122,7 @@ export default {
 	methods: {
 		/**
 		 * Create a new note and focus the note content field automatically
-		 * @param {Object} note Note object
+		 * @param {object} note Note object
 		 */
 		openNote(note) {
 			if (this.updating) {
@@ -172,7 +171,7 @@ export default {
 		},
 		/**
 		 * Create a new note by sending the information to the server
-		 * @param {Object} note Note object
+		 * @param {object} note Note object
 		 */
 		async createNote(note) {
 			this.updating = true
@@ -189,7 +188,7 @@ export default {
 		},
 		/**
 		 * Update an existing note on the server
-		 * @param {Object} note Note object
+		 * @param {object} note Note object
 		 */
 		async updateNote(note) {
 			this.updating = true
@@ -203,7 +202,7 @@ export default {
 		},
 		/**
 		 * Delete a note, remove it from the frontend and show a hint
-		 * @param {Object} note Note object
+		 * @param {object} note Note object
 		 */
 		async deleteNote(note) {
 			try {
