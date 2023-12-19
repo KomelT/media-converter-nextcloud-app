@@ -1,8 +1,8 @@
 <template>
-    <!--
-    SPDX-FileCopyrightText: Tilen Komel <me@komelt.dev>
-    SPDX-License-Identifier: AGPL-3.0-or-later
-    -->
+	<!--
+	SPDX-FileCopyrightText: Tilen Komel <me@komelt.dev>
+	SPDX-License-Identifier: AGPL-3.0-or-later
+	-->
 	<div id="content" class="app-mediaconverter">
 		<AppNavigation>
 			<AppNavigationNew v-if="!loading"
@@ -28,7 +28,7 @@
 							icon="icon-delete"
 							@click="deleteNote(note)">
 							{{
-							 t('mediaconverter', 'Delete note') }}
+								t('mediaconverter', 'Delete note') }}
 						</ActionButton>
 					</template>
 				</AppNavigationItem>
